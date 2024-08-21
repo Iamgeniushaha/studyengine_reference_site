@@ -1,0 +1,25 @@
+.hover:hover {
+    animation: keyHover 0.5s forwards;
+    
+}
+.hoverCancel:not(:hover) {
+    animation: keyHoverCancel 0.5s forwards;
+    
+}
+
+@keyframes keyHover{
+    0%{
+        background-color: rgb(255, 193, 170);
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+@keyframes keyHoverCancel{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 17%;
+    }
+}
